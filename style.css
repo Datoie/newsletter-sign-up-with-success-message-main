@@ -1,0 +1,162 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+/* left section */
+.left{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+/* typograpy */
+h1{
+    font-weight: 700;
+    font-size: 55px;
+}
+.main-p{
+    max-width: 360px;
+    font-weight: 400;
+}
+a{
+    color: hsl(234, 29%, 20%);
+    text-decoration: none
+}
+/* check cotnianer */
+.check-list-container{
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+.check-text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* input */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.laberl-contianer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+/* typograpy of input */
+.laberl-contianer label:first-child{
+    font-weight: 700;
+}
+.laberl-contianer label:last-child{
+    color: hsl(4, 100%, 67%);
+    opacity: 0;
+}
+input{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 65%);
+    box-shadow: 0 0 5px -2px hsl(234, 29%, 20%);
+    outline: none;
+}
+/* btn */
+button{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer
+}
+button:hover{
+    background:linear-gradient(to right, hsl(4, 100%, 67%) 50%,orange);
+    box-shadow: -5px 10px 20px -10px orange;
+}
+/* succes subscribe*/
+
+section{
+    display: grid;
+    gap: 20px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    display: none;
+}
+section img{
+    width:50px;
+}
+/* tyophraphyy of section */
+section h2{
+    font-size: 40px;
+    max-width: 200px;
+}
+section p {
+    max-width: 400px;
+}
+.right img:last-child{
+    display: none;
+}
+@media (max-width:820px) {
+    main{
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 20px;
+    }
+    .left{
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .right img:first-child{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        overflow: hidden;
+    }
+    .right img:last-child{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+    }
+    section img{
+        width: 30px;
+    }
+    section h2{
+        font-size: 30px;
+    }
+}
+@media (max-width:400px) {
+    body{
+        padding: 20px;
+    }
+}
+/* webkit */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset; /* Adjust the color and opacity as needed */
+}
